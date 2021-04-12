@@ -1,0 +1,22 @@
+<!-- block start-->
+{% extends 'base.htm' %}
+<!-- block ends-->
+<!-- block start-->
+{% block title %}
+<title>add</title>
+{% endblock %}
+<!-- block ends-->
+<!-- block start-->
+{% block content %}
+<h1>Welcome to Kitty Home</h1>
+<h4>Do you want to adopt a kitty?</h4>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <!-- 1 -->
+  {{form.name.label}} {{form.name}}
+  <br />
+  {{form.kitty_id.label}} {{form.kitty_id}}
+  <br />
+  {{form.submit()}} {% endblock %}
+</form>
+<!-- block ends-->
