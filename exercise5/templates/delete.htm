@@ -1,0 +1,22 @@
+<!-- block start-->
+{% extends 'base.htm' %}
+<!-- block ends-->
+
+<!-- block start-->
+{% block title %}
+<title>delete</title>
+{% endblock %}
+<!-- block ends-->
+
+{% block content %}
+<h1>Welcome to Puppy Adoption</h1>
+<h4>Do you want to adopt?</h4>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <!-- ###### -->
+  {{form.puppy_id.label}} {{form.puppy_id}}
+  <!-- ###### -->
+  {{form.submit()}}
+</form>
+{% endblock %}
+<!-- block ends-->

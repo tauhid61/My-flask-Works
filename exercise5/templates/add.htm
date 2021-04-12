@@ -1,0 +1,21 @@
+<!-- block start-->
+{% extends 'base.htm' %}
+<!-- block ends-->
+
+<!-- block start-->
+{% block title%}
+<title>add</title>
+{% endblock %}
+<!-- block ends-->
+{% block content %}
+<h1>Welcome to Puppy Donation</h1>
+<h4>Do You want to donate?</h4>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <!-- ###### -->
+  {{form.name.label}} {{form.name}}
+  <!-- ###### -->
+  {{form.submit()}}
+</form>
+{% endblock %}
+<!-- block ends-->

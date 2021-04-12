@@ -1,0 +1,21 @@
+<!-- block start-->
+{% extends 'base.htm' %}
+<!-- block ends-->
+
+<!-- block start-->
+{% block title%}
+<title>database</title>
+{% endblock %}
+<!-- block ends-->
+
+{% block content %}
+<h1>Here is the list of Available Puppies</h1>
+<ul>
+  <!-- block start-->
+  {% for pup in puppy_db %}
+  <li>{{pup.id}}. {{pup.name}}</li>
+  {% endfor %}
+  <!-- block ends-->
+</ul>
+{% endblock %}
+<!-- block ends-->
