@@ -1,0 +1,33 @@
+<!-- block start-->
+{% extends 'base.htm' %}
+<!-- block ends-->
+<!-- block start-->
+{% block title %}
+<title>Database</title>
+{% endblock %}
+<!-- block ends-->
+<!-- block start-->
+{% block content %}
+<h1>Welcome to Kitty Home</h1>
+<h4>List of all the Kitties</h4>
+<ul>
+  {% for kitty in kitties %}
+  <li>{{kitty.id}}. {{kitty.name}}</li>
+  {% endfor %}
+</ul>
+<h4>List of all the Kitties (with Owner)</h4>
+<!-- block start-->
+<ul>
+  {% for kitty in withOwner %}
+  <li>{{kitty.id}}. {{kitty.name}} ({{kitty.owner.name}})</li>
+  {% endfor %}
+</ul>
+<!-- block ends-->
+<!-- <h4>List of all the Kitties (without Owner)</h4> -->
+<!-- block start-->
+<!-- <ul>
+  {% for kitty in withoutOwner %}
+  <li>{{kitty.id}}. {{kitty.name}} ({{kitty.owner.name}})</li>
+  {% endfor %}
+</ul> -->
+{% endblock %}

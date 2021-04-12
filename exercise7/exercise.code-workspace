@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "name": "Bootcamp",
+      "path": ".."
+    },
+    {
+      "path": "..\\..\\..\\..\\1.DS\\6. Tensorflow-Advanced\\C1"
+    }
+  ],
+  "settings": {
+    "jupyter.jupyterServerType": "local"
+  }
+}
