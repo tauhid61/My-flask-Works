@@ -1,0 +1,11 @@
+{% extends 'base.htm' %}
+<!-- 1 -->
+{% block title %}
+<title>home</title>
+{% endblock %}
+<!-- 2 -->
+{% block content %} {% if current_user.is_authenticated %}
+<h4>Welcome {{current_user.username}}</h4>
+{% else %}
+<h4>Please Login or Register</h4>
+{% endif %} {% endblock content %}
